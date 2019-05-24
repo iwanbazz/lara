@@ -26,7 +26,8 @@ Route::get('blog/kontak', 'BlogController@kontak');
 
 Route::get('dosen', 'DosenController@index');
 
-Route::get('pegawai/{nama}', 'PegawaiController@index');
+// Route CRUD
+Route::get('pegawai', 'PegawaiController@index');
 
 Route::get('formulir', 'PegawaiController@formulir');
 
