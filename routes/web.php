@@ -19,9 +19,10 @@ Route::get('halo', function () {
     return "Halo, selamat datang di tutorial laravel";
 });
 
-Route::get('blog', function () {
-    return view('blog');
-});
+// Route Blog
+Route::get('blog', 'BlogController@home');
+Route::get('blog/tentang', 'BlogController@tentang');
+Route::get('blog/kontak', 'BlogController@kontak');
 
 Route::get('dosen', 'DosenController@index');
 
